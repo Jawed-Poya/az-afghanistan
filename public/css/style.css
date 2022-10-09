@@ -1539,7 +1539,7 @@ section {
 @media screen and (max-width: 990px) {
     .languages {
         right: 0;
-        top: 10px;
+        top: 60px;
         left: auto;
     }
     .languages a {
