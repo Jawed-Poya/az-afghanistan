@@ -1517,7 +1517,7 @@ section {
     color: var(--bs-white);
 }
 .languages a:focus {
-    transform: scale(1) !important;
+    animation: none !important;
 }
 .lang-flag img{
     width: 18px;
