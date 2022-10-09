@@ -1,0 +1,10 @@
+*:not(i) {
+    direction: rtl !important;
+    font-family: Calibri, sans-serif !important;
+}
+.input-group * {
+    border-radius: 0 6px 6px 0 !important;
+}
+.input-group *:last-child {
+    border-radius: 6px 0 0 6px !important;
+}
