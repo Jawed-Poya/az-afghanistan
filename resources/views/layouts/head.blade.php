@@ -9,26 +9,26 @@
     <meta content="@yield('keywords', '')" name="keywords">
 
     <!-- Fav icons -->
-    <link href="{{ asset('img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('img/apple-touch-icon.png') }} " rel="apple-touch-icon">
+    <link href="{{ secure_asset('img/favicon.png') }}" rel="icon">
+    <link href="{{ secure_asset('img/apple-touch-icon.png') }} " rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('vendor/animate.css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}'" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('vendor/swiper/swiper-bundle.min.css') }}'" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
 
     @if(\App\Helpers\Tools::instance()->getLanguage() != "en")
-    <link href="{{ asset('css/style-rtl.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/style-rtl.css') }}" rel="stylesheet">
     @endif
 
     @livewireStyles
@@ -38,17 +38,17 @@
 <body dir="{{ \App\Helpers\Tools::instance()->getLanguage() != "en" ? "rtl" : "ltr" }}">
     <div class="languages">
         <a href="setLanguage/en" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "en" ? 'selected' : '' }}">
-            <img src="{{ asset('img/english-flag.png') }}" alt="en">
+            <img src="{{ secure_asset('img/english-flag.png') }}" alt="en">
             {{ __('English') }}
         </a>
 
         <a href="setLanguage/ps" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "ps" ? 'selected' : '' }}">
-            <img src="{{ asset('img/afghanistan-flag.jpg') }}" alt="ps">
+            <img src="{{ secure_asset('img/afghanistan-flag.jpg') }}" alt="ps">
             {{ __('Pashto') }}
         </a>
 
         <a href="setLanguage/dr" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "dr" ? 'selected' : '' }}">
-            <img src="{{ asset('img/afghanistan-flag.jpg') }}" alt="dr">
+            <img src="{{ secure_asset('img/afghanistan-flag.jpg') }}" alt="dr">
             {{ __('Dari') }}
         </a>
     </div>
@@ -58,7 +58,7 @@
             <h1 class="logo {{ \App\Helpers\Tools::instance()->getLanguage() == "en" ? 'me-auto' : 'ms-auto' }}">
                 <a href="/">
                     {{ __('AZ') }}
-                    <img src="{{ asset('img/logo.png') }}" alt="" >
+                    <img src="{{ secure_asset('img/logo.png') }}" alt="" >
                     {{ __('Afghanistan') }}
                     <span class="small" style="font-size: small !important;">
                         {{ __('Service for the Asian - American Community') }}
