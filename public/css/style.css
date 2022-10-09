@@ -1508,9 +1508,6 @@ section {
     color: var(--bs-dark);
     font-size: 10px;
 }
-.languages a:focus {
-    transform: scale(1);
-}
 .languages a:hover {
     background-color: var(--bs-success);
     color: var(--bs-white);
@@ -1518,6 +1515,9 @@ section {
 .languages a.selected {
     background-color: var(--bs-success);
     color: var(--bs-white);
+}
+.languages a:focus {
+    transform: scale(1) !important;
 }
 .lang-flag img{
     width: 18px;
