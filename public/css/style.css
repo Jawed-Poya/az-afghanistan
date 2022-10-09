@@ -1539,8 +1539,15 @@ section {
 @media screen and (max-width: 990px) {
     .languages {
         right: 0;
-        top: 20%;
+        top: 10px;
         left: auto;
+    }
+    .languages a {
+        font-size: 12px;
+    }
+    .lang-flag img{
+        width: 16px;
+        height: 12px;
     }
     .logo {
         display: block;
