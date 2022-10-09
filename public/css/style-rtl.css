@@ -8,3 +8,10 @@
 .input-group *:last-child {
     border-radius: 6px 0 0 6px !important;
 }
+@media screen and (max-width: 990px) {
+    .languages {
+        left: 0;
+        top: 20%;
+        right: auto;
+    }
+}
