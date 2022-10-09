@@ -1510,6 +1510,9 @@ section {
     padding: 5px;
     color: var(--bs-dark);
 }
+.languages a:focus {
+    transform: scale(1);
+}
 .languages a:hover {
     background-color: var(--bs-success);
     color: var(--bs-white);
