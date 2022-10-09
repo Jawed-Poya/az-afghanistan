@@ -1503,7 +1503,7 @@ section {
     bottom: 40%;
     gap: 10px;
     display: flex;
-    z-index: 999;
+    z-index: inherit;
 }
 .languages a {
     background-color: #fff;
