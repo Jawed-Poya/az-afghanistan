@@ -1498,7 +1498,6 @@ section {
 }
 
 .languages {
-    position: fixed;
     left: 0;
     top: 30%;
     bottom: 40%;

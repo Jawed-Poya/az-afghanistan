@@ -33,22 +33,6 @@
     @stack('styles')
 </head>
 <body dir="{{ \App\Helpers\Tools::instance()->getLanguage() != "en" ? "rtl" : "ltr" }}">
-    <div class="languages">
-        <a href="setLanguage/en" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "en" ? 'selected' : '' }}">
-            <img src="{{ asset('img/english-flag.png') }}" alt="en">
-            {{ __('English') }}
-        </a>
-
-        <a href="setLanguage/ps" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "ps" ? 'selected' : '' }}">
-            <img src="{{ asset('img/afghanistan-flag.jpg') }}" alt="ps">
-            {{ __('Pashto') }}
-        </a>
-
-        <a href="setLanguage/dr" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "dr" ? 'selected' : '' }}">
-            <img src="{{ asset('img/afghanistan-flag.jpg') }}" alt="dr">
-            {{ __('Dari') }}
-        </a>
-    </div>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="px-0 container d-flex align-items-center border-bottom pb-3 mb-2">
@@ -147,6 +131,22 @@
                 </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
+            <div class="languages">
+                <a href="setLanguage/en" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "en" ? 'selected' : '' }}">
+                    <img src="{{ asset('img/english-flag.png') }}" alt="en">
+                    {{ __('English') }}
+                </a>
+
+                <a href="setLanguage/ps" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "ps" ? 'selected' : '' }}">
+                    <img src="{{ asset('img/afghanistan-flag.jpg') }}" alt="ps">
+                    {{ __('Pashto') }}
+                </a>
+
+                <a href="setLanguage/dr" class="lang-flag {{ \App\Helpers\Tools::instance()->getLanguage() == "dr" ? 'selected' : '' }}">
+                    <img src="{{ asset('img/afghanistan-flag.jpg') }}" alt="dr">
+                    {{ __('Dari') }}
+                </a>
+            </div>
         </nav><!-- .navbar -->
 
     </header>
