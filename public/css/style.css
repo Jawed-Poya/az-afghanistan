@@ -1520,10 +1520,10 @@ section {
     color: var(--bs-white);
 }
 .lang-flag img{
-    width: 24px;
-    height: 18px;
+    width: 28px;
+    height: 14px;
     border-radius: 2px;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 .lang-flag {
     font-size: 14px;
