@@ -45,7 +45,6 @@ class Login extends Component
             'country'=> 'required',
             'photo'=> 'image|max:3072',
         ])->validate();
-
     }
     public function render()
     {

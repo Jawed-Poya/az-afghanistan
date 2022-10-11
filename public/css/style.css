@@ -1534,6 +1534,9 @@ section {
     display: block;
     margin-top: 5px;
 }
+.navbar.navbar-mobile .languages {
+    display: none;
+}
 
 @media screen and (max-width: 990px) {
     .languages {
